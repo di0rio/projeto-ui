@@ -13,11 +13,11 @@ const Nav = () => {
     <Box sx={{ flexGrow: 1 }}>
       <AppBar sx={{background: "#28282A"}} position="static">
         <Toolbar>
-          <Typography sx={{fontFamily:"Roboto Condensed"}} align="center" variant="h5" component="div" sx={{ flexGrow: 1 }}>
+          <Typography align="center" variant="h5" component="div" sx={{ flexGrow: 1, fontWeight: 700, fontFamily:"Roboto Condensed" }}>
             ONEPIRATE
           </Typography>
-          <Button sx={{fontWeight: 700, fontFamily:"Roboto Condensed"}} color="inherit">Sign In</Button>
-          <Button color="error" sx={{color: "#FF3366", fontWeight: 700, fontFamily:"Roboto Condensed"}}>Sign Up</Button>
+          <Button sx={{fontSize:16,fontWeight: 700, fontFamily:"Roboto Condensed"}} color="inherit">Sign In</Button>
+          <Button color="error" sx={{fontSize: 16,color: "#FF3366", fontWeight: 700, fontFamily:"Roboto Condensed"}}>Sign Up</Button>
         </Toolbar>
       </AppBar>
     </Box>
