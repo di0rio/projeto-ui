@@ -1,8 +1,14 @@
 import styles from './Home.module.css'
 
+import mar from "../../assets/mar.png" 
+
 const Home = () => {
   return (
-    <div>Home</div>
+    <div>
+      <div>
+        <img className={styles.img} src={mar} alt="" />
+      </div>
+    </div>
   )
 }
 

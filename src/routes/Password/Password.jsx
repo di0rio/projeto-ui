@@ -7,7 +7,7 @@ import Box from "@mui/material/Box";
 import Typography from "@mui/material/Typography";
 import Container from "@mui/material/Container";
 import { createTheme, ThemeProvider } from "@mui/material/styles";
-import styles from "./SignUp.module.css";
+import styles from "./Password.module.css"
 
 
 
@@ -15,7 +15,7 @@ import styles from "./SignUp.module.css";
 
 const defaultTheme = createTheme();
 
-export default function SignUp() {
+export default function pass() {
   const handleSubmit = (event) => {
     event.preventDefault();
     const data = new FormData(event.currentTarget);
@@ -28,14 +28,13 @@ export default function SignUp() {
   return (
     <ThemeProvider theme={defaultTheme}>
       <Container
-        className={styles.signup}
+        className={styles.pass}
         component="main"
         sx={{ width: "550px" }}
       >
         <CssBaseline />
         <Box
           sx={{
-            marginTop: 8,
             display: "flex",
             flexDirection: "column",
             alignItems: "center",
@@ -53,21 +52,46 @@ export default function SignUp() {
               fontSize:"2.625rem"
             }}
           >
-            SIGN UP
+            FORGOT YOUR
+          </Typography>
+          <Typography
+            component="h1"
+            variant="h5"
+            sx={{
+              color: "rgba(0, 0, 0, 0.87)",
+              fontFamily: "Roboto Condensed",
+              fontWeight: "700",
+              fontSize:"2.625rem"
+            }}
+          >
+            PASSWORD?
           </Typography>
 
           <Typography
+          marginTop="30px"
             component="p"
             variant="p"
             sx={{
               color: "rgba(0, 0, 0, 0.87)",
               fontWeight: "400",
-              textDecoration: "underline",
+              fontSize: "13px"
+
             }}
           >
-            <Link href="/" sx={{ textDecoration: "none", color: "inherit" }}>
-              Already have an account?
-            </Link>
+              Enter your email address below and we'll send you a link to reset
+           
+          </Typography>
+          <Typography
+            component="p"
+            variant="p"
+            sx={{
+              color: "rgba(0, 0, 0, 0.87)",
+              fontWeight: "300",
+              fontSize: "13px"
+            }}
+          >
+              your password.
+           
           </Typography>
           <Box
             component="form"
@@ -76,28 +100,8 @@ export default function SignUp() {
             sx={{ mt: 3 }}
           >
             <Grid container spacing={2}>
-              <Grid item xs={12} sm={6}>
-                First Name*
-                <TextField 
-                
-                  autoComplete="given-name"
-                  name="firstName"
-                  required
-                  fullWidth
-                  id="firstName"
-                  autoFocus
-                />
-              </Grid>
-              <Grid item xs={12} sm={6}>
-                Last Name*
-                <TextField
-                  required
-                  fullWidth
-                  id="lastName"
-                  name="lastName"
-                  autoComplete="family-name"
-                />
-              </Grid>
+          
+           
               <Grid item xs={12}>
                 Email*
                 <TextField
@@ -108,17 +112,7 @@ export default function SignUp() {
                   autoComplete="email"
                 />
               </Grid>
-              <Grid item xs={12}>
-                Password*
-                <TextField
-                  required
-                  fullWidth
-                  name="password"
-                  type="password"
-                  id="password"
-                  autoComplete="new-password"
-                />
-              </Grid>
+             
             </Grid>
             <Button
               variant="contained"
@@ -131,11 +125,14 @@ export default function SignUp() {
                 mb: 2,
                 background: "#FF3366",
                 "&:hover": { background: "#FF3350" },
-              fontFamily: "Roboto Condensed",
+                fontFamily: "Roboto Condensed",
+              
               }}
             >
-              Sign Up
+              Sign In
             </Button>
+            <Link className={styles.pass} href="/" sx={{ textDecoration: "underline", color: "inherit" }}>
+            </Link>
             <Grid container justifyContent="flex-end">
               <Grid item></Grid>
             </Grid>
