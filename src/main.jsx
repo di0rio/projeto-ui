@@ -6,7 +6,7 @@ import App from './pages/App.jsx'
 import ReactDOM from 'react-dom/client'
 import { RouterProvider, createBrowserRouter } from 'react-router-dom';
 
-import Signup from './routes/SignUp/SignUp.jsx';
+import Signup from './routes/Signup/Signup.jsx';
 import Home from './routes/Home/Home.jsx';
 import Signin from './routes/Signin/Signin.jsx';
 import Password from './routes/Password/Password.jsx'
