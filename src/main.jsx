@@ -5,6 +5,7 @@ import App from './pages/App.jsx'
 
 import ReactDOM from 'react-dom/client'
 import { RouterProvider, createBrowserRouter } from 'react-router-dom';
+import Sigin from './routes/Signin/Signin.jsx';
 
 const router = createBrowserRouter([
   {
@@ -12,7 +13,7 @@ const router = createBrowserRouter([
     element: <App />,
     // errorElement: <Error />,
     children: [
-      // { path: "/", element: <Home /> },
+      { path: "/", element: <Sigin /> },
       // { path: "sobre", element: <Sobre /> },
       // { path: "contact", element: <Contact /> },
     ],

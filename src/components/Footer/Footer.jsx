@@ -27,7 +27,7 @@ export default function Footer() {
             <Link
               href="https://www.instagram.com/"
               color="inherit"
-              sx={{ pl: 5, pr: 5 }}
+              sx={{ pl: 4.9, pr: 5 }}
               
             >
               <Instagram />
