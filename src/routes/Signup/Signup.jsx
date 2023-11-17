@@ -65,7 +65,7 @@ export default function SignUp() {
               textDecoration: "underline",
             }}
           >
-            <Link href="/" sx={{ textDecoration: "none", color: "inherit" }}>
+            <Link href="/signin" sx={{ textDecoration: "none", color: "inherit" }}>
               Already have an account?
             </Link>
           </Typography>

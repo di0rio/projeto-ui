@@ -8,24 +8,33 @@ body {
   font-family: "Roboto Condensed", sans-serif;
 }
 
-.nav h5 {
+.title {
+  align-items: center;
+
   font-family: "Roboto Condensed", sans-serif;
+
+  margin-left: 36.5em;
+
+  text-decoration: none;
+  color: #fff;
+
+  font-size: 1.5rem;
+ 
+  font-weight: 700;
+  line-height: 2.4rem; /* 160% */
+  text-transform: uppercase;
 }
 
-.in {
+.in{
   color: #fff;
-  /* font-size: 1rem; */
   font-weight: 700;
   text-transform: uppercase;
   cursor: pointer;
   text-decoration: none;
-
-  padding: 1em 1.6em;
 }
 
 .up {
   color: #f36;
-  /* font-size: 1rem; */
   font-style: normal;
   font-weight: 700;
   text-transform: uppercase;
