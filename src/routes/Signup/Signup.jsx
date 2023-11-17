@@ -7,7 +7,7 @@ import Box from "@mui/material/Box";
 import Typography from "@mui/material/Typography";
 import Container from "@mui/material/Container";
 import { createTheme, ThemeProvider } from "@mui/material/styles";
-import styles from "./SignUp.module.css";
+import styles from "./Signup.module.css";
 
 
 
@@ -15,7 +15,7 @@ import styles from "./SignUp.module.css";
 
 const defaultTheme = createTheme();
 
-export default function SignUp() {
+export default function Signup() {
   const handleSubmit = (event) => {
     event.preventDefault();
     const data = new FormData(event.currentTarget);
