@@ -7,6 +7,7 @@ import Link from "@mui/material/Link";
 import carteira from "../../assets/carteira.svg";
 import leme from "../../assets/leme.svg";
 import sol from "../../assets/sol.svg";
+import Tasters from "../../components/Tasters/Tasters";
 
 const Home = () => {
   const BtnStyled = styled(Button)({
@@ -84,29 +85,95 @@ const Home = () => {
       <div className={styles.ofertas}>
         <div>
           <img className={styles.sol} src={sol} alt="" />
-          <Typography sx={{fontFamily: "Roboto Condensed", fontSize:"16px", fontWeight:"700", padding:'32px', maxWidth:'20em',position:"absolute", right:"83em", marginTop:"-10px" }}>THE BEST LUXURY HOTELS</Typography>
-          <Typography sx={{fontFamily:"Work Sans", padding:'40px', maxWidth:'25em', fontWeight:'300', marginTop:"22px"}}>
+          <Typography
+            sx={{
+              fontFamily: "Roboto Condensed",
+              fontSize: "16px",
+              fontWeight: "700",
+              padding: "32px",
+              maxWidth: "20em",
+              position: "absolute",
+              right: "83em",
+              marginTop:"1em"
+            }}
+            >
+            THE BEST LUXURY HOTELS
+          </Typography>
+            <div>
+          <Typography
+            sx={{
+              fontFamily: "Work Sans",
+              padding: "40px",
+              maxWidth: "25em",
+              fontWeight: "300",
+              marginTop: "54px",
+            }}
+          >
             From the latest trendy boutique hotel to the iconic palace with XXL
             pool, go for a mini-vacation just a few subway stops away from your
             home.
           </Typography>
+          </div>
         </div>
         <div>
           <img src={leme} alt="" />
-          <Typography sx={{fontFamily: "Roboto Condensed", fontSize:"16px", fontWeight:"700", padding:'32px', maxWidth:'20em', position:"absolute", right:"55em"}}>NEW EXPERIENCIES</Typography>
-          <Typography sx={{fontFamily:"Work Sans", padding:'40px', maxWidth:'25em', fontWeight:'300', marginTop:"40px"}}>
+          <Typography
+            sx={{
+              fontFamily: "Roboto Condensed",
+              fontSize: "16px",
+              fontWeight: "700",
+              padding: "32px",
+              maxWidth: "20em",
+              position: "absolute",
+              right: "55em",
+            }}
+          >
+            NEW EXPERIENCIES
+          </Typography>
+          <Typography
+            sx={{
+              fontFamily: "Work Sans",
+              padding: "40px",
+              maxWidth: "25em",
+              fontWeight: "300",
+              marginTop: "55px",
+            }}
+          >
             Privatize a pool, take a Japanese bath or wake up in 900m2 of
             garden… your Sundays will not be alike.
           </Typography>
         </div>
         <div>
           <img src={carteira} alt="" />
-          <Typography sx={{fontFamily: "Roboto Condensed", fontSize:"16px", fontWeight:"700", padding:'32px', maxWidth:'20em',position:"absolute", right:"25em"}}>EXCLUSIVE RATES</Typography>
-          <Typography sx={{fontFamily:"Work Sans", padding:'40px', maxWidth:'25em', fontWeight:'300', marginTop:"40px"}}>
+          <Typography
+            sx={{
+              fontFamily: "Roboto Condensed",
+              fontSize: "16px",
+              fontWeight: "700",
+              padding: "32px",
+              maxWidth: "20em",
+              position: "absolute",
+              right: "25em",
+            }}
+          >
+            EXCLUSIVE RATES
+          </Typography>
+          <Typography
+            sx={{
+              fontFamily: "Work Sans",
+              padding: "40px",
+              maxWidth: "25em",
+              fontWeight: "300",
+              marginTop: "55px",
+            }}
+          >
             By registering, you will access specially negotiated rates that you
             will not find anywhere else.
           </Typography>
         </div>
+      </div>
+      <div className={styles.taters}>
+        <Tasters></Tasters>
       </div>
     </div>
   );
