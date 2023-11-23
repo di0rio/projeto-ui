@@ -2,6 +2,7 @@
   display: flex;
   width: 100%;
   padding: 5em 7.03125rem 7.53375rem 7.03125rem;
+
   justify-content: center;
   align-items: center;
 
@@ -13,25 +14,32 @@
 .submain {
   width: 75rem;
   height: 34.52875rem;
-  /* flex-shrink: 0; */
 }
 
 .title {
   display: flex;
   padding: 0.1em 0.1em 7em 0.1em;
 
-  margin-left: 25em;
+  margin-left: 30em;
 }
 
 .works {
   display: flex;
-  gap: 26.33em;
+  gap: 24.33em;
 
-  margin-left: -9em;
   margin-top: 4.53em;
 }
 
 .works img{
   padding: 1.5em;
   margin-left: 0.2em;
+}
+
+.btn{
+  display: flex;
+  align-items: center;
+  justify-content: center;
+
+  text-decoration: none;
+  color: white;
 }

@@ -1,15 +1,17 @@
 import styles from "./Home.module.css";
 
 import { Button, Typography, styled } from "@mui/material";
-
-import mar from "../../assets/mar.png";
 import Link from "@mui/material/Link";
-import carteira from "../../assets/carteira.svg";
-import leme from "../../assets/leme.svg";
-import sol from "../../assets/sol.svg";
 import Tasters from "../../components/Tasters/Tasters";
 import Works from "../../components/Works/Works";
 import Help from "../../components/Helpbtn/Help";
+import Offers from "../../components/Offers/Offers";
+
+import mar from "../../assets/mar.png";
+import leme from "../../assets/leme.svg";
+import casao from "../../assets/casao.svg"
+import carteira from "../../assets/carteira.svg";
+import sol from "../../assets/sol.svg";
 
 const Home = () => {
   const BtnStyled = styled(Button)({
@@ -96,7 +98,7 @@ const Home = () => {
               padding: "32px",
               maxWidth: "20em",
               position: "absolute",
-              right: "83em",
+              right: "75.5em",
               marginTop:"1em"
             }}
             >
@@ -128,7 +130,7 @@ const Home = () => {
               padding: "32px",
               maxWidth: "20em",
               position: "absolute",
-              right: "55em",
+              right: "52em",
             }}
           >
             NEW EXPERIENCIES
@@ -156,7 +158,7 @@ const Home = () => {
               padding: "32px",
               maxWidth: "20em",
               position: "absolute",
-              right: "25em",
+              right: "28em",
             }}
           >
             EXCLUSIVE RATES
@@ -180,6 +182,12 @@ const Home = () => {
       </div>
       <div>
         <Works></Works>
+      </div>
+      <div className={styles.casa}>
+        <div>
+        <Offers></Offers>
+        </div>
+        <img src={casao} alt="" />
       </div>
       <div>
         <Help></Help>

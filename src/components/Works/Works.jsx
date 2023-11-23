@@ -5,6 +5,7 @@ import { Button, Typography } from "@mui/material";
 import martelo from "../../assets/martelo.png";
 import fixa from "../../assets/fixa.png";
 import mic from "../../assets/mic.svg";
+import { Link } from "react-router-dom";
 
 const Works = () => {
   return (
@@ -41,7 +42,7 @@ const Works = () => {
                 display: "flex",
                 fontFamily: "Work Sans",
                 fontWeight: "300",
-                maxWidth: "12em",
+                maxWidth: "27em",
               }}
             >
               Appointment every Wednesday 9am.
@@ -65,7 +66,7 @@ const Works = () => {
                 display: "flex",
                 fontFamily: "Work Sans",
                 fontWeight: "300",
-                maxWidth: "12em",
+                maxWidth: "27em",
               }}
             >
               First come, first served. Our offers are in limited quantities, so
@@ -90,7 +91,7 @@ const Works = () => {
                 display: "flex",
                 fontFamily: "Work Sans",
                 fontWeight: "300",
-                maxWidth: "12em",
+                maxWidth: "27em",
               }}
             >
               New offers every week. New experiences, new surprises. Your
@@ -98,13 +99,13 @@ const Works = () => {
             </Typography>
           </div>
         </div>
-        <div>
+        <div className={style.btn}>
           <Button
             sx={{
               backgroundColor: "#FF3366",
               "&:hover": { background: "#FF3350" },
-              left: "28em",
-              marginTop:"4em",
+              // left: "28em",
+              marginTop: "4em",
               width: "200px",
               padding: "0.96875rem 2.45313rem 1.03125rem 2.5rem",
               fontFamily: "Roboto Condensed",
@@ -112,7 +113,7 @@ const Works = () => {
             }}
             variant="contained"
           >
-            Get started
+            <Link className={style.btn} to="/signin">Get started</Link>
           </Button>
         </div>
       </div>
