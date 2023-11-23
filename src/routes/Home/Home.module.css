@@ -35,6 +35,8 @@
   display: flex;
   flex-direction: row;
 
+margin-left: 0.2em;
+
   align-items: center;
   justify-content: center;
 

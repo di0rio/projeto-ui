@@ -8,6 +8,8 @@ import carteira from "../../assets/carteira.svg";
 import leme from "../../assets/leme.svg";
 import sol from "../../assets/sol.svg";
 import Tasters from "../../components/Tasters/Tasters";
+import Works from "../../components/Works/Works";
+import Help from "../../components/Helpbtn/Help";
 
 const Home = () => {
   const BtnStyled = styled(Button)({
@@ -50,6 +52,7 @@ const Home = () => {
             <Button
               sx={{
                 backgroundColor: "#FF3366",
+                "&:hover": { background: "#FF3350" },
                 position: "absolute",
                 top: "400px",
                 left: "840px",
@@ -174,6 +177,12 @@ const Home = () => {
       </div>
       <div className={styles.taters}>
         <Tasters></Tasters>
+      </div>
+      <div>
+        <Works></Works>
+      </div>
+      <div>
+        <Help></Help>
       </div>
     </div>
   );
